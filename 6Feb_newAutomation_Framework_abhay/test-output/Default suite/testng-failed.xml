@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="testingbaba_test.TextBox_test">
+        <methods>
+          <include name="getdetails"/>
+          <include name="getResultAnalysis"/>
+          <include name="clickontextbox"/>
+          <include name="clickonpractice"/>
+          <include name="getverify"/>
+          <include name="filldetailstextbox"/>
+          <include name="getLaunch_testingbabaUrl"/>
+          <include name="clickonelement"/>
+        </methods>
+      </class> <!-- testingbaba_test.TextBox_test -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

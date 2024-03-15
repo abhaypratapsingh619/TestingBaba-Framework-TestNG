@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Failed suite [testingbaba_test]">
+  <parameter name="environment" value="StagingUrl"/>
+  <parameter name="browsername" value="chrome"/>
+  <test thread-count="1" parallel="tests" name="BrowserWindow_test(failed)">
+    <classes>
+      <class name="testingbaba_test.BrowserWindow_test">
+        <methods>
+          <include name="getResultAnalysis"/>
+          <include name="clickonnewwindowmessagebutton"/>
+          <include name="teardown"/>
+          <include name="getLaunch_testingbabaUrl"/>
+        </methods>
+      </class> <!-- testingbaba_test.BrowserWindow_test -->
+    </classes>
+  </test> <!-- BrowserWindow_test(failed) -->
+</suite> <!-- Failed suite [testingbaba_test] -->
