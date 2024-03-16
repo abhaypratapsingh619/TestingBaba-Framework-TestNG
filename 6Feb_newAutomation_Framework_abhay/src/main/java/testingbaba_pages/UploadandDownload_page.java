@@ -14,22 +14,22 @@ public class UploadandDownload_page extends Base_Library
 		 PageFactory.initElements(getdriver(), this);
 	}
 	
-	@FindBy(xpath = "//*[@id=\"myModal2\"]/div/div/div[1]/button")
+	@FindBy(xpath = "//*[@id=\'myModal2\']/div/div/div[1]/button")
 	private WebElement closebutton;
 	
-	@FindBy(xpath = "//*[text()=\"Practice\"]")
+	@FindBy(xpath = "//*[text()=\'Practice\']")
 	private WebElement practice;
 	
-	@FindBy(xpath = "//*[@data-target=\"#elements\"]")
+	@FindBy(xpath = "//*[@data-target=\'#elements\']")
 	private WebElement elements;
 	
-	@FindBy(xpath = "//*[text()=\"upload and download\"]")
+	@FindBy(xpath = "//*[text()=\'upload and download\']")
 	private WebElement uploadanddownloadbutton;
 	
-	@FindBy(xpath = "//*[text()=\"Download\"]")
+	@FindBy(xpath = "//*[text()=\'Download\']")
 	private WebElement downloadbutton;
 	
-	@FindBy(xpath = "//*[text()=\"Select a file\"]")
+	@FindBy(xpath = "//*[text()=\'Select a file\']")
 	private WebElement selectfilebutton;
 	
 	public void clickonclosebutton()

@@ -13,29 +13,32 @@ public class Frames_page extends Base_Library
 		PageFactory.initElements(getdriver(), this);
 	}
 	
-	@FindBy(xpath = "//*[text()=\"×\"]")
+	@FindBy(xpath = "//*[text()=\'×\']")
 	private WebElement closebutton;
 	
-	@FindBy(xpath = "//*[text()=\"Practice\"]")
+	@FindBy(xpath = "//*[text()=\'Practice\']")
 	private WebElement practicebutton;
 	
-	@FindBy(xpath = "//*[@data-target=\"#alerts\"]")
+	@FindBy(xpath = "//*[@data-target=\'#alerts\']")
 	private WebElement alertsframeandwindow;
 	
-	@FindBy(xpath = "//*[text()=\"frames\"]")
+	@FindBy(xpath = "//*[text()=\'frames\']")
 	private WebElement framesbutton;
 	
-	@FindBy(xpath = "//*[@id=\"tab_13\"]/iframe[1]")
+	@FindBy(xpath = "//*[@id=\'tab_13\']/iframe[1]")
 	private WebElement iframe1;
 	
 	@FindBy(xpath = "(//html/body/h1)[1]")
 	private WebElement frametext1;
 	
-	@FindBy(xpath = "(//html/body/h1)[2]")
-	private WebElement frametext2;
-	
-	@FindBy(xpath = "//*[@id=\"tab_13\"]/iframe[2]")
+	@FindBy(xpath = "//*[@id=\'tab_13\']/iframe[2]")
 	private WebElement iframe2;
+	
+//	@FindBy(xpath = "(//html/body/h1)[2]")
+//	private WebElement frametext2;
+	
+	@FindBy(xpath = "(//html/body/h1)[1]")
+	private WebElement frametext2;
 	
 	public void clickonclosebutton()
 	{
@@ -61,12 +64,16 @@ public class Frames_page extends Base_Library
 	
 	public void getframetext1()
 	{
-		frametext1.getText();
+		getdriver().switchTo().frame(iframe1);
+		System.out.println(frametext1.getText());
+		getdriver().switchTo().defaultContent();
 	}
 	
 	public void getframetext2()
 	{
-		frametext2.getText();
+		getdriver().switchTo().frame(iframe2);
+		System.out.println(frametext2.getText());
+		getdriver().switchTo().defaultContent();
 	}
 	
 	

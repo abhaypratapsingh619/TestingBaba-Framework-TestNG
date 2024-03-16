@@ -13,34 +13,34 @@ public class NestedFrames_page extends Base_Library
 		PageFactory.initElements(getdriver(), this);
 	}
 	
-	@FindBy(xpath = "//*[text()=\"×\"]")
+	@FindBy(xpath = "//*[text()=\'×\']")
 	private WebElement closebutton;
 	
-	@FindBy(xpath = "//*[text()=\"Practice\"]")
+	@FindBy(xpath = "//*[text()=\'Practice\']")
 	private WebElement practicebutton;
 	
-	@FindBy(xpath = "//*[@data-target=\"#alerts\"]")
+	@FindBy(xpath = "//*[@data-target=\'#alerts\']")
 	private WebElement alertsframeandwindow;
 	
-	@FindBy(xpath = "//*[text()=\"nested frames\"]")
+	@FindBy(xpath = "//*[text()=\'nested frames\']")
 	private WebElement nestedframes;
 	
-	@FindBy(xpath = "//*[text()=\"Parent\"]")
+	@FindBy(xpath = "//*[text()=\'Parent\']")
 	private WebElement parent;
 	
-	@FindBy(xpath = "//*[text()=\"Child\"]")
+	@FindBy(xpath = "//*[text()=\'Child\']")
 	private WebElement child;
 	
-	@FindBy(xpath = "//*[text()=\"Click Here\"]")
+	@FindBy(xpath = "//*[text()=\'Click Here\']")
 	private WebElement clickhere;
 	
-	@FindBy(xpath = "//*[@id=\"tab_14\"]/iframe")
+	@FindBy(xpath = "//*[@id=\'tab_14\']/iframe")
 	private WebElement iframe1;
 	
-	@FindBy(xpath = "//*[@height=\"400\"]")
+	@FindBy(xpath = "//*[@height=\'400\']")
 	private WebElement iframe2;
 	
-	@FindBy(xpath = "//*[@height=\"300\"]")
+	@FindBy(xpath = "//*[@height=\'300\']")
 	private WebElement iframe3;
 	
 	@FindBy(xpath = "/html/body/p")
@@ -81,11 +81,5 @@ public class NestedFrames_page extends Base_Library
 		clickhere.click();
 		System.out.println(clickheretext.getText());
 		getdriver().switchTo().defaultContent();
-	}
-	
-	
-	
-	
-	
-	
+	}	
 }

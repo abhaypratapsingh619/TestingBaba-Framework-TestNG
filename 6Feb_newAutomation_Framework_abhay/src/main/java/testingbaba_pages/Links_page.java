@@ -14,43 +14,43 @@ public class Links_page extends Base_Library
 		PageFactory.initElements(getdriver(), this);
 	}
 	
-	@FindBy(xpath = "//*[@id=\"myModal2\"]/div/div/div[1]/button")
+	@FindBy(xpath = "//*[@id=\'myModal2\']/div/div/div[1]/button")
 	private WebElement closebutton;
 	
-	@FindBy(xpath = "//*[text()=\"Practice\"]")
+	@FindBy(xpath = "//*[text()=\'Practice\']")
 	private WebElement practice;
 	
-	@FindBy(xpath = "//*[@data-target=\"#elements\"]")
+	@FindBy(xpath = "//*[@data-target=\'#elements\']")
 	private WebElement elements;
 	
-	@FindBy(xpath = "//*[text()=\"links\"]")
+	@FindBy(xpath = "//*[text()=\'links\']")
 	private WebElement links;
 	
-	@FindBy(xpath = "//*[text()=\"Demo Page\"]")
+	@FindBy(xpath = "//*[text()=\'Demo Page\']")
 	private WebElement demopagelink;
 	
-	@FindBy(xpath = "//*[text()=\"Created\"]")
+	@FindBy(xpath = "//*[text()=\'Created\']")
 	private WebElement createdlink;
 	
-	@FindBy(xpath = "//*[text()=\"No Content\"]")
+	@FindBy(xpath = "//*[text()=\'No Content\']")
 	private WebElement nocontentlink;
 	
-	@FindBy(xpath = "//*[text()=\"Moved\"]")
+	@FindBy(xpath = "//*[text()=\'Moved\']")
 	private WebElement movedlink;
 	
-	@FindBy(xpath = "//*[text()=\"Bad Request\"]")
+	@FindBy(xpath = "//*[text()=\'Bad Request\']")
 	private WebElement badrequestlink;
 	
-	@FindBy(xpath = "//*[text()=\"Unauthorized\"]")
+	@FindBy(xpath = "//*[text()=\'Unauthorized\']")
 	private WebElement unauthorisedlink;
 	
-	@FindBy(xpath = "//*[text()=\"Forbidden\"]")
+	@FindBy(xpath = "//*[text()=\'Forbidden\']")
 	private WebElement forbiddenlink;
 	
-	@FindBy(xpath = "//*[text()=\"Not Found\"]")
+	@FindBy(xpath = "//*[text()=\'Not Found\']")
 	private WebElement notfoundlink;
 	
-	@FindBy(xpath = "//*[@id=\"link-result\"]")
+	@FindBy(xpath = "//*[@id=\'link-result\']")
 	private WebElement linkresulttext;
 	
 	

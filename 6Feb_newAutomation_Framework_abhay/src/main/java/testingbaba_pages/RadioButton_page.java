@@ -19,31 +19,31 @@ public class RadioButton_page extends Base_Library
 		PageFactory.initElements(getdriver(), this);
 	}
 	
-	@FindBy(xpath = "//*[@id=\"myModal2\"]/div/div/div[1]/button")
+	@FindBy(xpath = "//*[@id=\'myModal2\']/div/div/div[1]/button")
 	private WebElement closebutton;
 	
-	@FindBy(xpath = "//*[text()=\"Practice\"]")
+	@FindBy(xpath = "//*[text()=\'Practice\']")
 	private WebElement practice;
 	
-	@FindBy(xpath = "//*[@data-target=\"#elements\"]")
+	@FindBy(xpath = "//*[@data-target=\'#elements\']")
 	private WebElement elements;
 	
-	@FindBy(xpath = "//*[text()=\"radio buttons\"]")
+	@FindBy(xpath = "//*[text()=\'radio buttons\']")
 	private WebElement radiobutton;
 	
-	@FindBy(xpath = "//*[@class=\"form-check-label\"]")
+	@FindBy(xpath = "//*[@class=\'form-check-label\']")
 	private List<WebElement> checkbuttonlist;
 	
-	@FindBy(xpath = "//*[@id=\"radio-content\"]")
+	@FindBy(xpath = "//*[@id=\'radio-content\']")
 	private WebElement value;
 	
-	@FindBy(xpath = "//*[@value=\"yes\"]")
+	@FindBy(xpath = "//*[@value=\'yes\']")
 	private WebElement yescheckbox;
 	
-	@FindBy(xpath = "//*[@value=\"impressive\"]")
+	@FindBy(xpath = "//*[@value=\'impressive\']")
 	private WebElement impressivecheckbox;
 	
-	@FindBy(xpath = "//*[@value=\"no\"]")
+	@FindBy(xpath = "//*[@value=\'no\']")
 	private WebElement nocheckbox;
 	
 	public void clickonclosebutton()

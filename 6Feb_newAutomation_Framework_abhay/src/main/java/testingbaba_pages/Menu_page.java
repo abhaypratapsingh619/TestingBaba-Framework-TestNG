@@ -13,31 +13,31 @@ public class Menu_page extends Base_Library
 		PageFactory.initElements(getdriver(), this);
 	}
 	
-	@FindBy(xpath = "//*[@id=\"myModal2\"]/div/div/div[1]/button")
+	@FindBy(xpath = "//*[@id=\'myModal2\']/div/div/div[1]/button")
 	private WebElement closebutton;
 	
-	@FindBy(xpath = "//*[text()=\"Practice\"]")
+	@FindBy(xpath = "//*[text()=\'Practice\']")
 	private WebElement practice;
 	
-	@FindBy(xpath = "//*[@data-target=\"#widget\"]")
+	@FindBy(xpath = "//*[@data-target=\'#widget\']")
 	private WebElement widgets;
 	
-	@FindBy(xpath = "//*[text()=\"menu\"]")
+	@FindBy(xpath = "//*[text()=\'menu\']")
 	private WebElement menu;
 	
-	@FindBy(xpath = "//*[@id=\"navbar\"]/ul/li[1]")
+	@FindBy(xpath = "//*[@id=\'navbar\']/ul/li[1]")
 	private WebElement home;
 	
-	@FindBy(xpath = "//*[@id=\"navbar\"]/ul/li[2]")
+	@FindBy(xpath = "//*[@id=\'navbar\']/ul/li[2]")
 	private WebElement about;
 	
-	@FindBy(xpath = "//*[@id=\"navbar\"]/ul/li[3]")
+	@FindBy(xpath = "//*[@id=\'navbar\']/ul/li[3]")
 	private WebElement services;
 	
-	@FindBy(xpath = "//*[@id=\"navbar\"]/ul/li[4]")
+	@FindBy(xpath = "//*[@id=\'navbar\']/ul/li[4]")
 	private WebElement blog;
 	
-	@FindBy(xpath = "//*[@id=\"navbar\"]/ul/li[5]")
+	@FindBy(xpath = "//*[@id=\'navbar\']/ul/li[5]")
 	private WebElement contact;
 	
 	public void clickonclosebutton()

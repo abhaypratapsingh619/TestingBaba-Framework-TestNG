@@ -15,25 +15,25 @@ public class AutoComplete_page extends Base_Library
 		PageFactory.initElements(getdriver(), this);
 	}
 	
-	@FindBy(xpath = "//*[@id=\"myModal2\"]/div/div/div[1]/button")
+	@FindBy(xpath = "//*[@id=\'myModal2\']/div/div/div[1]/button")
 	private WebElement closebutton;
 	
-	@FindBy(xpath = "//*[text()=\"Practice\"]")
+	@FindBy(xpath = "//*[text()=\'Practice\']")
 	private WebElement practice;
 	
-	@FindBy(xpath = "//*[@data-target=\"#widget\"]")
+	@FindBy(xpath = "//*[@data-target=\'#widget\']")
 	private WebElement widgets;
 	
-	@FindBy(xpath = "//*[text()=\"auto complete\"]")
+	@FindBy(xpath = "//*[text()=\'auto complete\']")
 	private WebElement autocomplete;
 	
-	@FindBy(xpath = "//*[@id=\"tab_17\"]/div/iframe")
+	@FindBy(xpath = "//*[@id=\'tab_17\']/div/iframe")
 	private WebElement iframe;
 	
-	@FindBy(xpath = "//*[@id=\"myInput\"]")
+	@FindBy(xpath = "//*[@id=\'myInput\']")
 	private WebElement searchbox;
 	
-	@FindBy(xpath = "//*[@id=\"myInputautocomplete-list\"]/div")
+	@FindBy(xpath = "//*[@id=\'myInputautocomplete-list\']/div")
 	private List<WebElement> searchlist;
 	
 	public void clickonclosebutton()
@@ -64,5 +64,4 @@ public class AutoComplete_page extends Base_Library
 		searchlist.get(1).click();
 		getdriver().switchTo().defaultContent();
 	}
-	
 }

@@ -17,28 +17,28 @@ public class SelectMenu_page extends Base_Library
 		PageFactory.initElements(getdriver(), this);
 	}
 	
-	@FindBy(xpath = "//*[@id=\"myModal2\"]/div/div/div[1]/button")
+	@FindBy(xpath = "//*[@id=\'myModal2\']/div/div/div[1]/button")
 	private WebElement closebutton;
 	
-	@FindBy(xpath = "//*[text()=\"Practice\"]")
+	@FindBy(xpath = "//*[text()=\'Practice\']")
 	private WebElement practice;
 	
-	@FindBy(xpath = "//*[@data-target=\"#widget\"]")
+	@FindBy(xpath = "//*[@data-target=\'#widget\']")
 	private WebElement widgets;
 	
-	@FindBy(xpath = "//*[text()=\"select menu\"]")
+	@FindBy(xpath = "//*[text()=\'select menu\']")
 	private WebElement selectmenu;
 	
-	@FindBy(xpath = "(//*[@class=\"form-control\"])[16]")
+	@FindBy(xpath = "(//*[@class=\'form-control\'])[16]")
 	private WebElement selectvalue;
 	
-	@FindBy(xpath = "//*[@id=\"tab_24\"]/form/div/div[2]/select")
+	@FindBy(xpath = "//*[@id=\'tab_24\']/form/div/div[2]/select")
 	private WebElement selectone;
 	
-	@FindBy(xpath = "//*[@id=\"tab_24\"]/form/div/div[3]/div/select")
+	@FindBy(xpath = "//*[@id=\'tab_24\']/form/div/div[3]/div/select")
 	private WebElement oldstyleselectmenu;
 	
-	@FindBy(xpath = "//*[@id=\"tab_24\"]/form/div/div[5]/div/select")
+	@FindBy(xpath = "//*[@id=\'tab_24\']/form/div/div[5]/div/select")
 	private WebElement standardmultiselect;
 	
 	public void clickonclosebutton()

@@ -19,46 +19,46 @@ public class WebTables_page extends Base_Library
 		PageFactory.initElements(getdriver(), this);
 	}
 	
-	@FindBy(xpath = "//*[@id=\"myModal2\"]/div/div/div[1]/button")
+	@FindBy(xpath = "//*[@id=\'myModal2\']/div/div/div[1]/button")
 	private WebElement closebutton;
 	
-	@FindBy(xpath = "//*[text()=\"Practice\"]")
+	@FindBy(xpath = "//*[text()=\'Practice\']")
 	private WebElement practice;
 	
-	@FindBy(xpath = "//*[@data-target=\"#elements\"]")
+	@FindBy(xpath = "//*[@data-target=\'#elements\']")
 	private WebElement elements;
 	
-	@FindBy(xpath = "//*[text()=\"web tables\"]")
+	@FindBy(xpath = "//*[text()=\'web tables\']")
 	private WebElement webtablesbutton;
 	
-	@FindBy(xpath = "//*[@id=\"tab_4\"]/div/iframe")
+	@FindBy(xpath = "//*[@id=\'tab_4\']/div/iframe")
 	private WebElement iframe;
 	
-	@FindBy(xpath = "//*[@pattern=\"^[a-zA-Z][\\sa-zA-Z]{2,32}\"]")
+	@FindBy(xpath = "//*[@pattern=\'^[a-zA-Z][\\sa-zA-Z]{2,32}\']")
 	private WebElement name;
 	
-	@FindBy(xpath = "//*[@name=\"email\"]")
+	@FindBy(xpath = "//*[@name=\'email\']")
 	private WebElement email;
 	
-	@FindBy(xpath = "//*[text()=\"Save\"]")
+	@FindBy(xpath = "//*[text()=\'Save\']")
 	private WebElement save;
 	
-	@FindBy(xpath = "//*[@class=\"container-fluid\"]/table/tbody/tr/td[1]")
+	@FindBy(xpath = "//*[@class=\'container-fluid\']/table/tbody/tr/td[1]")
 	private List<WebElement> nametextvalue;
 	
-	@FindBy(xpath = "//*[@class=\"container-fluid\"]/table/tbody/tr/td[2]")
+	@FindBy(xpath = "//*[@class=\'container-fluid\']/table/tbody/tr/td[2]")
 	private List<WebElement> emailtextvalue;
 	
-	@FindBy(xpath = "//*[text()=\"Edit\"]")
+	@FindBy(xpath = "//*[text()=\'Edit\']")
 	private List<WebElement> editbutton;
 	
-	@FindBy(xpath = "//*[@name=\"edit_name\"]")
+	@FindBy(xpath = "//*[@name=\'edit_name\']")
 	private WebElement editname;
 	
-	@FindBy(xpath = "//*[@name=\"edit_email\"]")
+	@FindBy(xpath = "//*[@name=\'edit_email\']")
 	private WebElement editemail;
 	
-	@FindBy(xpath = "//*[text()=\"Update\"]")
+	@FindBy(xpath = "//*[text()=\'Update\']")
 	private WebElement updatebutton;
 	
 	public void clickonclosebutton()
@@ -103,8 +103,7 @@ public class WebTables_page extends Base_Library
 		{
 			actualname.add(Excelreaddata(path, 1, 0, i));
 		}
-		
-		
+				
 		for(WebElement expectedname:nametextvalue)
 		{
 			for(String actual:actualname)
@@ -114,15 +113,13 @@ public class WebTables_page extends Base_Library
 				actualname.remove(actual);
 			}
 		}
-		
-		
+				
 		ArrayList<String> actualemail = new ArrayList<String>();
 		for(int i=1;i<=11;i++)
 		{
 			actualemail.add(Excelreaddata(path, 1, 1, i));
 		}
-		
-		
+				
 		for(WebElement expectedemail:emailtextvalue)
 		{
 			for(String actual:actualemail)
@@ -131,8 +128,7 @@ public class WebTables_page extends Base_Library
 				System.out.println(expectedemail.getText() +" - "+ actual);
 				actualemail.remove(actual);
 			}
-		}
-		
+		}		
 	}
 	
 	public void updatedetails()
@@ -171,15 +167,13 @@ public class WebTables_page extends Base_Library
 				updatedactualname.remove(actual);
 			}
 		}
-		
-		
+				
 		ArrayList<String> updatedactualemail = new ArrayList<String>();
 		for(int i=1;i<=11;i++)
 		{
 			updatedactualemail.add(Excelreaddata(path, 1, 3, i));
 		}
-		
-		
+				
 		for(WebElement updatedexpectedemail:emailtextvalue)
 		{
 			for(String actual:updatedactualemail)
@@ -189,10 +183,5 @@ public class WebTables_page extends Base_Library
 				updatedactualemail.remove(actual);
 			}
 		}
-		
-	}
-	
-	
-	
-	
+	}		
 }

@@ -20,40 +20,40 @@ public class CheckBox_page extends Base_Library
 		PageFactory.initElements(getdriver(), this);
 	}
 	
-	@FindBy(xpath = "//*[@id=\"myModal2\"]/div/div/div[1]/button")
+	@FindBy(xpath = "//*[@id=\'myModal2\']/div/div/div[1]/button")
 	private WebElement closebutton;
 	
-	@FindBy(xpath = "//*[text()=\"Practice\"]")
+	@FindBy(xpath = "//*[text()=\'Practice\']")
 	private WebElement practice;
 	
-	@FindBy(xpath = "//*[@data-target=\"#elements\"]")
+	@FindBy(xpath = "//*[@data-target=\'#elements\']")
 	private WebElement elements;
 	
-	@FindBy(xpath = "//*[text()=\"check box\"]")
+	@FindBy(xpath = "//*[text()=\'check box\']")
 	private WebElement checkboxbutton;
 	
-	@FindBy(xpath = "//*[@id=\"tab_2\"]/div/iframe")
+	@FindBy(xpath = "//*[@id=\'tab_2\']/div/iframe")
 	private WebElement iframe;
 	
-	@FindBy(xpath = "//*[@id=\"myCheck\"]")
+	@FindBy(xpath = "//*[@id=\'myCheck\']")
 	private WebElement mobilecheckbox;
 	
-	@FindBy(xpath = "//*[@id=\"mylaptop\"]")
+	@FindBy(xpath = "//*[@id=\'mylaptop\']")
 	private WebElement laptopcheckbox;
 	
-	@FindBy(xpath = "//*[@id=\"mydesktop\"]")
+	@FindBy(xpath = "//*[@id=\'mydesktop\']")
 	private WebElement desktopcheckbox;
 	
-	@FindBy(xpath = "//*[@style=\"display: block;\"]")
+	@FindBy(xpath = "//*[@style=\'display: block;\']")
 	private List<WebElement> details;
 	
-	@FindBy(xpath = "//*[@id=\"text\"]")
+	@FindBy(xpath = "//*[@id=\'text\']")
 	private WebElement mobiletext;
 	
-	@FindBy(xpath = "//*[@id=\"text1\"]")
+	@FindBy(xpath = "//*[@id=\'text1\']")
 	private WebElement laptoptext;
 	
-	@FindBy(xpath = "//*[@id=\"text2\"]")
+	@FindBy(xpath = "//*[@id=\'text2\']")
 	private WebElement desktoptext;
 	
 	public void clickonclosebutton()

@@ -3,16 +3,22 @@
 <suite thread-count="1" parallel="tests" name="Failed suite [testingbaba_test]">
   <parameter name="environment" value="StagingUrl"/>
   <parameter name="browsername" value="chrome"/>
-  <test thread-count="1" parallel="tests" name="BrowserWindow_test(failed)">
+  <test thread-count="1" parallel="tests" name="BrowserWindow_test22(failed)">
     <classes>
-      <class name="testingbaba_test.BrowserWindow_test">
+      <class name="testingbaba_test.BrowserWindow_test22">
         <methods>
-          <include name="getResultAnalysis"/>
-          <include name="clickonnewwindowmessagebutton"/>
-          <include name="teardown"/>
           <include name="getLaunch_testingbabaUrl"/>
+          <include name="clickonalertsframeandwindow"/>
+          <include name="clickonbrowserwindowsbutton"/>
+          <include name="teardown"/>
+          <include name="clickonclosebutton"/>
+          <include name="clickonnewtabbutton"/>
+          <include name="clickonnewwindowmessagebutton"/>
+          <include name="clickonpracticebutton"/>
+          <include name="clickonnewwindowbutton"/>
+          <include name="getResultAnalysis"/>
         </methods>
-      </class> <!-- testingbaba_test.BrowserWindow_test -->
+      </class> <!-- testingbaba_test.BrowserWindow_test22 -->
     </classes>
-  </test> <!-- BrowserWindow_test(failed) -->
+  </test> <!-- BrowserWindow_test22(failed) -->
 </suite> <!-- Failed suite [testingbaba_test] -->

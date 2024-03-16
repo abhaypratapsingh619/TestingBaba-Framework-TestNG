@@ -13,34 +13,34 @@ public class ModalDialogs_page extends Base_Library
 		PageFactory.initElements(getdriver(), this);
 	}
 	
-	@FindBy(xpath = "//*[text()=\"×\"]")
+	@FindBy(xpath = "//*[text()=\'×\']")
 	private WebElement closebutton;
 	
-	@FindBy(xpath = "//*[text()=\"Practice\"]")
+	@FindBy(xpath = "//*[text()=\'Practice\']")
 	private WebElement practicebutton;
 	
-	@FindBy(xpath = "//*[@data-target=\"#alerts\"]")
+	@FindBy(xpath = "//*[@data-target=\'#alerts\']")
 	private WebElement alertsframeandwindow;
 	
-	@FindBy(xpath = "//*[text()=\"modal dialogs\"]")
+	@FindBy(xpath = "//*[text()=\'modal dialogs\']")
 	private WebElement modaldialogs;
 	
-	@FindBy(xpath = "//*[@data-toggle=\"modal\"][1]")
+	@FindBy(xpath = "//*[@data-toggle=\'modal\'][1]")
 	private WebElement smallmodalbutton;
 	
-	@FindBy(xpath = "(//*[@class=\"modal-body\"])[2]")
+	@FindBy(xpath = "(//*[@class=\'modal-body\'])[2]")
 	private WebElement smallmodaltext;
 	
-	@FindBy(xpath = "//*[@id=\"exampleModal1\"]/div/div/div[3]/button")
+	@FindBy(xpath = "//*[@id=\'exampleModal1\']/div/div/div[3]/button")
 	private WebElement smallmodalclosebutton;
 	
-	@FindBy(xpath = "(//*[@data-toggle=\"modal\"])[2]")
+	@FindBy(xpath = "(//*[@data-toggle=\'modal\'])[2]")
 	private WebElement largemodalbutton;
 	
-	@FindBy(xpath = "//*[@id=\"exampleModal2\"]/div/div/div[2]")
+	@FindBy(xpath = "//*[@id=\'exampleModal2\']/div/div/div[2]")
 	private WebElement largemodaltext;
 	
-	@FindBy(xpath = "//*[@id=\"exampleModal2\"]/div/div/div[3]/button")
+	@FindBy(xpath = "//*[@id=\'exampleModal2\']/div/div/div[3]/button")
 	private WebElement largemodalclosebutton;
 	
 	public void clickonclosebutton()
@@ -78,9 +78,5 @@ public class ModalDialogs_page extends Base_Library
 		Thread.sleep(1000);
 		System.out.println(largemodaltext.getText());
 		largemodalclosebutton.click();
-	}
-	
-	
-	
-	
+	}	
 }

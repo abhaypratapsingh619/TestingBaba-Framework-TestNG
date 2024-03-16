@@ -13,34 +13,34 @@ public class Accordion_page extends Base_Library
 		PageFactory.initElements(getdriver(), this);
 	}
 	
-	@FindBy(xpath = "//*[@id=\"myModal2\"]/div/div/div[1]/button")
+	@FindBy(xpath = "//*[@id=\'myModal2\']/div/div/div[1]/button")
 	private WebElement closebutton;
 	
-	@FindBy(xpath = "//*[text()=\"Practice\"]")
+	@FindBy(xpath = "//*[text()=\'Practice\']")
 	private WebElement practice;
 	
-	@FindBy(xpath = "//*[@data-target=\"#widget\"]")
+	@FindBy(xpath = "//*[@data-target=\'#widget\']")
 	private WebElement widgets;
 	
-	@FindBy(xpath = "//*[text()=\"accordion\"]")
+	@FindBy(xpath = "//*[text()=\'accordion\']")
 	private WebElement accordion;
 	
-	@FindBy(xpath = "//*[@data-target=\"#collapse1\"]")
+	@FindBy(xpath = "//*[@data-target=\'#collapse1\']")
 	private WebElement paragraph1;
 	
-	@FindBy(xpath = "(//*[@class=\"card-body\"])[5]")
+	@FindBy(xpath = "(//*[@class=\'card-body\'])[5]")
 	private WebElement paragraph1text;
 	
-	@FindBy(xpath = "//*[@data-target=\"#collapse2\"]")
+	@FindBy(xpath = "//*[@data-target=\'#collapse2\']")
 	private WebElement paragraph2;
 	
-	@FindBy(xpath = "(//*[@class=\"card-body\"])[6]")
+	@FindBy(xpath = "(//*[@class=\'card-body\'])[6]")
 	private WebElement paragraph2text;
 	
-	@FindBy(xpath = "//*[@data-target=\"#collapse3\"]")
+	@FindBy(xpath = "//*[@data-target=\'#collapse3\']")
 	private WebElement paragraph3;
 	
-	@FindBy(xpath = "(//*[@class=\"card-body\"])[7]")
+	@FindBy(xpath = "(//*[@class=\'card-body\'])[7]")
 	private WebElement paragraph3text;
 	
 	public void clickonclosebutton()

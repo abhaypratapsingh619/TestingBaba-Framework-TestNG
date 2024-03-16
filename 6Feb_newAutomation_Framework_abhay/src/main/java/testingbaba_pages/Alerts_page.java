@@ -13,32 +13,29 @@ public class Alerts_page extends Base_Library
 		PageFactory.initElements(getdriver(), this);
 	}
 	
-	@FindBy(xpath = "//*[text()=\"×\"]")
+	@FindBy(xpath = "//*[text()=\'×\']")
 	private WebElement closebutton;
 	
-	@FindBy(xpath = "//*[text()=\"Practice\"]")
+	@FindBy(xpath = "//*[text()=\'Practice\']")
 	private WebElement practicebutton;
 	
-	@FindBy(xpath = "//*[@data-target=\"#alerts\"]")
+	@FindBy(xpath = "//*[@data-target=\'#alerts\']")
 	private WebElement alertsframeandwindow;
 	
-	@FindBy(xpath = "//*[text()=\"alerts\"]")
+	@FindBy(xpath = "//*[text()=\'alerts\']")
 	private WebElement alerts;
 	
-	@FindBy(xpath = "(//*[text()=\"Click me\"])[1]")
+	@FindBy(xpath = "(//*[text()=\'Click me\'])[1]")
 	private WebElement seealertbutton;
 	
-	@FindBy(xpath = "//*[@onclick=\"aftersec5()\"]")
+	@FindBy(xpath = "//*[@onclick=\'aftersec5()\']")
 	private WebElement after5secondbutton;
 	
-	@FindBy(xpath = "//*[@onclick=\"myconfirm()\"]")
+	@FindBy(xpath = "//*[@onclick=\'myconfirm()\']")
 	private WebElement confirmboxbutton;
 	
-	@FindBy(xpath = "(//*[text()=\"Click me\"])[2]")
+	@FindBy(xpath = "(//*[text()=\'Click me\'])[2]")
 	private WebElement promptboxbutton;
-	
-//	@FindBy(xpath = "//*[text()=\"alerts\"]")
-//	private WebElement ;
 	
 	public void clickonclosebutton()
 	{
@@ -84,9 +81,5 @@ public class Alerts_page extends Base_Library
 		promptboxbutton.click();
 		sendkeys_alert("Abhay");
 		acceptalert();
-	}
-	
-	
-	
-	
+	}	
 }

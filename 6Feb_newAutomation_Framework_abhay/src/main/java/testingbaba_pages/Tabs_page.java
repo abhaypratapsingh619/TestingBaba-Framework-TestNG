@@ -15,34 +15,34 @@ public class Tabs_page extends Base_Library
 		PageFactory.initElements(getdriver(), this);
 	}
 	
-	@FindBy(xpath = "//*[@id=\"myModal2\"]/div/div/div[1]/button")
+	@FindBy(xpath = "//*[@id=\'myModal2\']/div/div/div[1]/button")
 	private WebElement closebutton;
 	
-	@FindBy(xpath = "//*[text()=\"Practice\"]")
+	@FindBy(xpath = "//*[text()=\'Practice\']")
 	private WebElement practice;
 	
-	@FindBy(xpath = "//*[@data-target=\"#widget\"]")
+	@FindBy(xpath = "//*[@data-target=\'#widget\']")
 	private WebElement widgets;
 	
-	@FindBy(xpath = "//*[text()=\"tabs\"]")
+	@FindBy(xpath = "//*[text()=\'tabs\']")
 	private WebElement tabs;
 	
-	@FindBy(xpath = "(//*[@data-toggle=\"tab\"])[1]")
+	@FindBy(xpath = "(//*[@data-toggle=\'tab\'])[1]")
 	private WebElement tab1;
 	
-	@FindBy(xpath = "//*[@id=\"tab_21\"]/div/div/div[1]/p")
+	@FindBy(xpath = "//*[@id=\'tab_21\']/div/div/div[1]/p")
 	private WebElement tab1text;
 
-	@FindBy(xpath = "(//*[@data-toggle=\"tab\"])[2]")
+	@FindBy(xpath = "(//*[@data-toggle=\'tab\'])[2]")
 	private WebElement tab2;
 
-	@FindBy(xpath = "//*[@id=\"tab_21\"]/div/div/div[2]/p")
+	@FindBy(xpath = "//*[@id=\'tab_21\']/div/div/div[2]/p")
 	private List<WebElement> tab2text;
 
-	@FindBy(xpath = "(//*[@data-toggle=\"tab\"])[3]")
+	@FindBy(xpath = "(//*[@data-toggle=\'tab\'])[3]")
 	private WebElement tab3;
 
-	@FindBy(xpath = "//*[@id=\"tab_21\"]/div/div/div[3]/p")
+	@FindBy(xpath = "//*[@id=\'tab_21\']/div/div/div[3]/p")
 	private List<WebElement> tab3text;
 
 	public void clickonclosebutton()

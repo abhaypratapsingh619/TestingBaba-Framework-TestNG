@@ -3,42 +3,42 @@
 <suite name="testingbaba_test" parallel="tests" thread-count="1">
 <parameter name="environment" value="StagingUrl"></parameter>
 <parameter name="browsername" value="chrome"></parameter>
-  <test name="Login_test" enabled="false">
+  <test name="Login_test" enabled="true">
     <classes>
       <class name="testingbaba_test.Login_test"/>
     </classes>
   </test> <!-- Test -->
-  <test name="TextBox_test" enabled="false">
+  <test name="TextBox_test" enabled="true">
     <classes>
       <class name="testingbaba_test.TextBox_test"/>
     </classes>
   </test> <!-- Test -->
-  <test name="CheckBox_test" enabled="false">
+  <test name="CheckBox_test" enabled="true">
     <classes>
       <class name="testingbaba_test.CheckBox_test"/>
     </classes>
   </test> <!-- Test -->
-  <test name="RadioButton_test" enabled="false">
+  <test name="RadioButton_test" enabled="true">
     <classes>
       <class name="testingbaba_test.RadioButton_test"/>
     </classes>
   </test> <!-- Test -->
-  <test name="WebTables_test" enabled="false">
+  <test name="WebTables_test" enabled="true">
     <classes>
       <class name="testingbaba_test.WebTables_test"/>
     </classes>
   </test> <!-- Test -->
-  <test name="Buttons_test" enabled="false">
+  <test name="Buttons_test" enabled="true">
     <classes>
       <class name="testingbaba_test.Buttons_test"/>
     </classes>
   </test> <!-- Test -->
-  <test name="Links_test" enabled="false">
+  <test name="Links_test" enabled="true">
     <classes>
       <class name="testingbaba_test.Links_test"/>
     </classes>
   </test> <!-- Test -->
-  <test name="UploadandDownload_test" enabled="false">
+  <test name="UploadandDownload_test" enabled="true">
     <classes>
       <class name="testingbaba_test.UploadandDownload_test"/>
     </classes>
@@ -48,64 +48,59 @@
       <class name="testingbaba_test.BrowserWindow_test"/>
     </classes>
   </test> <!-- Test -->
-  <test name="Alerts_test" enabled="false">
+  <test name="Alerts_test" enabled="true">
     <classes>
       <class name="testingbaba_test.Alerts_test"/>
     </classes>
   </test> <!-- Test -->
-  <test name="Frames_test" enabled="false">
+  <test name="Frames_test" enabled="true">
     <classes>
       <class name="testingbaba_test.Frames_test"/>
     </classes>
   </test> <!-- Test -->
-  <test name="NestedFrames_test" enabled="false">
+  <test name="NestedFrames_test" enabled="true">
     <classes>
       <class name="testingbaba_test.NestedFrames_test"/>
     </classes>
   </test> <!-- Test -->
-  <test name="ModalDialogs_test" enabled="false">
+  <test name="ModalDialogs_test" enabled="true">
     <classes>
       <class name="testingbaba_test.ModalDialogs_test"/>
     </classes>
   </test> <!-- Test -->
-  <test name="Accordion_test" enabled="false">
+  <test name="Accordion_test" enabled="true">
     <classes>
       <class name="testingbaba_test.Accordion_test"/>
     </classes>
   </test> <!-- Test -->
-  <test name="AutoComplete_test" enabled="false">
+  <test name="AutoComplete_test" enabled="true">
     <classes>
       <class name="testingbaba_test.AutoComplete_test"/>
     </classes>
   </test> <!-- Test -->
-  <test name="ProgressBar_test" enabled="false">
+  <test name="ProgressBar_test" enabled="true">
     <classes>
       <class name="testingbaba_test.ProgressBar_test"/>
     </classes>
   </test> <!-- Test -->
-  <test name="Tabs_test" enabled="false">
+  <test name="Tabs_test" enabled="true">
     <classes>
       <class name="testingbaba_test.Tabs_test"/>
     </classes>
   </test> <!-- Test -->
-  <test name="ToolTips_test" enabled="false">
+  <test name="ToolTips_test" enabled="true">
     <classes>
       <class name="testingbaba_test.ToolTips_test"/>
     </classes>
   </test> <!-- Test -->
-  <test name="Menu_test" enabled="false">
+  <test name="Menu_test" enabled="true">
     <classes>
       <class name="testingbaba_test.Menu_test"/>
     </classes>
   </test> <!-- Test -->
-  <test name="SelectMenu_test" enabled="false">
+  <test name="SelectMenu_test" enabled="true">
     <classes>
       <class name="testingbaba_test.SelectMenu_test"/>
-    </classes>
-  </test> <!-- Test -->
-  <test name="BrowserWindow_test22" enabled="false">
-    <classes>
-      <class name="testingbaba_test.BrowserWindow_test22"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

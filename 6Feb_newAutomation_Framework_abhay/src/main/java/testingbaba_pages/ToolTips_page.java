@@ -13,25 +13,25 @@ public class ToolTips_page extends Base_Library
 		PageFactory.initElements(getdriver(), this);
 	}
 	
-	@FindBy(xpath = "//*[@id=\"myModal2\"]/div/div/div[1]/button")
+	@FindBy(xpath = "//*[@id=\'myModal2\']/div/div/div[1]/button")
 	private WebElement closebutton;
 	
-	@FindBy(xpath = "//*[text()=\"Practice\"]")
+	@FindBy(xpath = "//*[text()=\'Practice\']")
 	private WebElement practice;
 	
-	@FindBy(xpath = "//*[@data-target=\"#widget\"]")
+	@FindBy(xpath = "//*[@data-target=\'#widget\']")
 	private WebElement widgets;
 	
-	@FindBy(xpath = "//*[text()=\"tool tips\"]")
+	@FindBy(xpath = "//*[text()=\'tool tips\']")
 	private WebElement tooltips;
 
-	@FindBy(xpath = "//*[@id=\"tab_22\"]/button")
+	@FindBy(xpath = "//*[@id=\'tab_22\']/button")
 	private WebElement hovermetoseebutton;
 
-	@FindBy(xpath = "//*[@id=\"tab_22\"]/input")
+	@FindBy(xpath = "//*[@id=\'tab_22\']/input")
 	private WebElement hovermetoseesearchbox;
 	
-	@FindBy(xpath = "(//*[@id=\"tab_22\"]/p)[2]")
+	@FindBy(xpath = "(//*[@id=\'tab_22\']/p)[2]")
 	private WebElement pagetext;
 
 	public void clickonclosebutton()
@@ -70,8 +70,5 @@ public class ToolTips_page extends Base_Library
 	public void printpagetext()
 	{
 		System.out.println(pagetext.getText());
-	}
-	
-	
-	
+	}	
 }

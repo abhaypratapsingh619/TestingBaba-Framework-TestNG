@@ -74,11 +74,10 @@ public class Base_Library implements Excel_ReadData, Application_utility, proper
 //		driver.manage().window().maximize();
 		getdriver().get(url);
 		getdriver().manage().window().maximize();
-//		getdriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+//		getdriver().manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
 		try 
 		{
 			Thread.sleep(1000);
-//			getdriver().findElement(By.xpath("//*[@id=\"myModal2\"]/div/div/div[1]/button")).click();
 		} 
 		catch (Exception e) {	
 		}

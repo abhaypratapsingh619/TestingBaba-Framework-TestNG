@@ -21,34 +21,34 @@ public class TextBox_page extends Base_Library
 	{
 		PageFactory.initElements(getdriver(), this);
 	}
-	@FindBy(xpath = "//*[@id=\"myModal2\"]/div/div/div[1]/button")
+	@FindBy(xpath = "//*[@id=\'myModal2\']/div/div/div[1]/button")
 	private WebElement closebutton;
 	
-	@FindBy(xpath = "//*[text()=\"Practice\"]")
+	@FindBy(xpath = "//*[text()=\'Practice\']")
 	private WebElement practice;
 	
-	@FindBy(xpath = "//*[@data-target=\"#elements\"]")
+	@FindBy(xpath = "//*[@data-target=\'#elements\']")
 	private WebElement elements;
 	
-	@FindBy(xpath = "//*[text()=\"text box\"]")
+	@FindBy(xpath = "//*[text()=\'text box\']")
 	private WebElement text_box;
 	
-	@FindBy(xpath = "//*[@id=\"fullname1\"]")
+	@FindBy(xpath = "//*[@id=\'fullname1\']")
 	private WebElement full_name;
 	
-	@FindBy(xpath = "//*[@id=\"fullemail1\"]")
+	@FindBy(xpath = "//*[@id=\'fullemail1\']")
 	private WebElement email;
 	
-	@FindBy(xpath = "//*[@id=\"fulladdresh1\"]")
+	@FindBy(xpath = "//*[@id=\'fulladdresh1\']")
 	private WebElement current_address;
 	
-	@FindBy(xpath = "//*[@id=\"paddresh1\"]")
+	@FindBy(xpath = "//*[@id=\'paddresh1\']")
 	private WebElement permanent_address;
 	
-	@FindBy(xpath = "//input[@value=\"Submit\"]")
+	@FindBy(xpath = "//input[@value=\'Submit\']")
 	private WebElement submit;
 	
-	@FindBy(xpath = "//*[@id=\"tab_1\"]/div/div[2]/label")
+	@FindBy(xpath = "//*[@id=\'tab_1\']/div/div[2]/label")
 	private List<WebElement> datalist;
 	
 	public void clickonclosebutton()

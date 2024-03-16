@@ -16,22 +16,22 @@ public class ProgressBar_page extends Base_Library
 		PageFactory.initElements(getdriver(), this);
 	}
 	
-	@FindBy(xpath = "//*[@id=\"myModal2\"]/div/div/div[1]/button")
+	@FindBy(xpath = "//*[@id=\'myModal2\']/div/div/div[1]/button")
 	private WebElement closebutton;
 	
-	@FindBy(xpath = "//*[text()=\"Practice\"]")
+	@FindBy(xpath = "//*[text()=\'Practice\']")
 	private WebElement practice;
 	
-	@FindBy(xpath = "//*[@data-target=\"#widget\"]")
+	@FindBy(xpath = "//*[@data-target=\'#widget\']")
 	private WebElement widgets;
 	
-	@FindBy(xpath = "//*[text()=\"progress bar\"]")
+	@FindBy(xpath = "//*[text()=\'progress bar\']")
 	private WebElement progressbar;
 	
-	@FindBy(xpath = "//*[@id=\"my-progress\"]/div")
+	@FindBy(xpath = "//*[@id=\'my-progress\']/div")
 	private WebElement widthpercentage;
 	
-	@FindBy(xpath = "//*[@onclick=\"move()\"]")
+	@FindBy(xpath = "//*[@onclick=\'move()\']")
 	private WebElement start;
 	
 	public void clickonclosebutton()
@@ -65,12 +65,5 @@ public class ProgressBar_page extends Base_Library
 		System.out.println(width_2);
 		assertEquals(width_1, Excelreaddata(path, 4, 1, 1));
 		assertEquals(width_2, Excelreaddata(path, 4, 1, 2));
-	}
-	
-	
-	
-	
-	
-	
-	
+	}	
 }

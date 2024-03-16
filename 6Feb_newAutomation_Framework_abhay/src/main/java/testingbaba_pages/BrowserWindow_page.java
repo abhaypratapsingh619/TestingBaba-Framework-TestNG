@@ -13,40 +13,40 @@ public class BrowserWindow_page extends Base_Library {
 		PageFactory.initElements(getdriver(), this);
 	}
 
-	@FindBy(xpath = "//*[text()=\"×\"]")
+	@FindBy(xpath = "//*[text()=\'×\']")
 	private WebElement closebutton;
 
-	@FindBy(xpath = "//*[text()=\"Practice\"]")
+	@FindBy(xpath = "//*[text()=\'Practice\']")
 	private WebElement practicebutton;
 
-	@FindBy(xpath = "//*[@data-target=\"#alerts\"]")
+	@FindBy(xpath = "//*[@data-target=\'#alerts\']")
 	private WebElement alertsframeandwindow;
 
-	@FindBy(xpath = "//*[text()=\"browser windows\"]")
+	@FindBy(xpath = "//*[text()=\'browser windows\']")
 	private WebElement browserwindowsbutton;
 
-	@FindBy(xpath = "//*[@id=\"tab_11\"]/div[1]/a")
+	@FindBy(xpath = "//*[@id=\'tab_11\']/div[1]/a")
 	private WebElement newtab;
 
-	@FindBy(xpath = "//*[@id=\"tab_11\"]/div[2]/a")
+	@FindBy(xpath = "//*[@id=\'tab_11\']/div[2]/a")
 	private WebElement newwindow;
 
-	@FindBy(xpath = "//*[@id=\"tab_11\"]/div[3]/a")
+	@FindBy(xpath = "//*[@id=\'tab_11\']/div[3]/a")
 	private WebElement newwindowmessage;
 
-	@FindBy(xpath = "//*[@id=\"APjFqb\"]")
+	@FindBy(xpath = "//*[@id=\'APjFqb\']")
 	private WebElement googlesearch;
 
-	@FindBy(xpath = "/html/body/p")
-	private WebElement newwindowmessagetext;
-
-	@FindBy(xpath = "//*[\"display: block\"]/p")
-	private WebElement newwindowmessagetext2;
-
-	@FindBy(xpath = "//*['display: block']/p/text()")
-	private WebElement newwindowmessagetext3;
-
-	// @FindBy(tagName = "p")
+//	@FindBy(xpath = "/html/body/p")
+//	private WebElement newwindowmessagetext;
+//
+//	@FindBy(xpath = "//*[\'display: block\']/p")
+//	private WebElement newwindowmessagetext2;
+//
+//	@FindBy(xpath = "//*['display: block']/p/text()")
+//	private WebElement newwindowmessagetext3;
+//
+//	@FindBy(tagName = "p")
 //	private WebElement newwindowmessagetext4;
 
 	public void clickonclosebutton() {
@@ -93,12 +93,10 @@ public class BrowserWindow_page extends Base_Library {
 //		System.out.println(newwindowmessagetext3.getText());
 		// System.out.println(newwindowmessagetext4.getText());
 //		System.out.println(getdriver().switchTo().alert().getText());
-
 //		WebElement ele = getdriver().findElement(By.tagName("p"));
 //		String tet = ele.getText();
 //		System.out.println(tet);
 		getdriver().close();
 		changewindow(0);
 	}
-
 }
